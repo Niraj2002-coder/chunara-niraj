@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Circle Rotation</title>
+  <style>
+    .container {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 100px auto;
+      border: 2px dashed #ccc;
+      border-radius: 50%;
+    }
+
+    .circle-object {
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -100px);
+      animation: rotateCircle 4s linear infinite;
+      transform-origin: 50% 100px; /* Center of rotation */
+    }
+
+    @keyframes rotateCircle {
+      from {
+        transform: rotate(0deg) translate(-50%, -100px);
+      }
+      to {
+        transform: rotate(360deg) translate(-50%, -100px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle-object"></div>
+  </div>
+</body>
+</html>

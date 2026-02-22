@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            animation: abc 10s infinite;
+            box-shadow: 20px 20px 50px black ;
+            transform: translate(150px);
+            transform: rotate(180deg);
+            margin:150px;
+
+        }
+        @keyframes abc {
+                    25%{
+                        background-color: pink;
+                        border-radius: 50px;
+                        transform: rotateX(180 deg);    
+                        box-shadow: 20px 20px 50px yellow;
+                        transform: translate(100px,300px);
+                          }
+                    50%{
+                        background-color: brown;
+                        border-radius: 100px;
+                        box-shadow: 20px 20px 50px rgb(218, 112, 5);
+                        transform: rotate(180 deg);
+                    }
+                    }
+    </style>
+</head>
+<body>
+    <div class="main"></div>    
+</body>
+</html>

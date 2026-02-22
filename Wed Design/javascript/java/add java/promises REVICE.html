@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        let obj = new Promise (function(res,rej){
+        let no = 1234;
+        
+                    
+        if (no){
+            let no1 = no ;
+            let total = 0;
+
+            while (no > 0) {
+                let rem = no % 10;
+                total = total * 10 + rem;
+                no = Math.floor(no / 10);
+            }
+
+            res ("Reverse no" + total);
+            
+        }
+
+        else 
+
+        {
+            rej ("not successfully");
+        }
+        }
+         
+        );
+
+        console.log(obj);
+    </Script>
+</body>
+</html>

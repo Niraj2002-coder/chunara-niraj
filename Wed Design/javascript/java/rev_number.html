@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+
+        <input type="number" id="n1">
+        <button onclick="reverse_number()">Submit</button>
+
+    <script>
+
+        function reverse_number()
+
+        {
+            let n1 = document.getElementById("n1").value
+            remainder = 0;
+            rev = 0
+            while(n1!=0)
+
+            {
+                remainder = n1%10;
+                rev = rev*10+remainder;
+                n1 = Math.floor(n1/10);
+            }
+
+            document.write(rev)
+        }
+    </script>
+</body>
+</html>

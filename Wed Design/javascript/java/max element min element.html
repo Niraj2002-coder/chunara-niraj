@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =[56,24,78,21,32]
+
+        let max_element = a[0]
+        let min_element = a[0]
+
+        for (let i=0;i<5;i++)
+
+        {
+            if (a[i]<min_element)
+
+            {
+                min_element = a[i]
+            }
+
+            else if (a[i]>max_element)
+
+            {
+                max_element = a[i]
+            }
+
+         }
+
+         document.write (min_element)
+         document.write (max_element)
+    </script>
+</body>
+</html>
